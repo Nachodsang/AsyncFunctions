@@ -1,34 +1,9 @@
 const asyncFunction3 = (delay = 1000) => {
-  setTimeout(() => {
-    console.log(1);
+  for (let i = 1; i < 11; i++) {
     setTimeout(() => {
-      console.log(2);
-      setTimeout(() => {
-        console.log(3);
-        setTimeout(() => {
-          console.log(4);
-          setTimeout(() => {
-            console.log(5);
-            setTimeout(() => {
-              console.log(6);
-              setTimeout(() => {
-                console.log(7);
-                setTimeout(() => {
-                  console.log(8);
-                  setTimeout(() => {
-                    console.log(9);
-                    setTimeout(() => {
-                      console.log(10);
-                    }, delay);
-                  }, delay);
-                }, delay);
-              }, delay);
-            }, delay);
-          }, delay);
-        }, delay);
-      }, delay);
-    }, delay);
-  }, delay);
+      console.log(i);
+    }, delay * i);
+  }
 };
 
 asyncFunction3();
